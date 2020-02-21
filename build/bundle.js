@@ -62471,7 +62471,7 @@ var Level = Sandbox.extend({
       var deferred = Q.defer();
       deferred.resolve();
       finishAnimationChain = deferred.promise;
-      Main.getEventBaton().trigger('commandSubmitted', 'echo "level solved!"');
+      Main.getEventBaton().trigger('commandSubmitted', 'echo "level solved! type in \'levels\' to access the next level"');
     } else {
       GlobalStateActions.changeIsAnimating(true);
       finishAnimationChain = this.mainVis.gitVisuals.finishAnimation(speed);
